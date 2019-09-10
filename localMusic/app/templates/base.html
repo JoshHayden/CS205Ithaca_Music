@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Local Music</title>
+        {% else %}
+        <title>Welcome to Josh's Local Music Emporium</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Josh's Local Music Emporium: <a href="/index">Home</a>, <a href="/listOfArtists">Artists</a>, <a href="/createNewArtist">Add New Artist</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
