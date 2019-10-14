@@ -5,6 +5,8 @@
     <div><p><b>Hometown: </b> {{ artist.hometown }}</p></div>
     <div><p><b>Bio: </b> {{ artist.bio }}</p></div>
     <h2> Events: </h2>
+
+
     {% for event in artist.events %}
     <div><p>{{ event }}</p></div>
     {% endfor %}
