@@ -7,7 +7,11 @@
     <h2> Events: </h2>
 
 
-    {% for event in artist.events %}
-    <div><p>{{ event }}</p></div>
+    {% for event in events %}
+    <div><p>{{ event.title }}, {{ event.date }}</p></div>
     {% endfor %}
+
+    {% if not events %}
+        <div><p><b>No known events</b></p></div>
+    {%  endif %}
 {% endblock %}
