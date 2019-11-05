@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block app_content %}
     <h1>Create a New Artist</h1>
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
@@ -14,7 +14,7 @@
         </p>
         <p>
             {{ form.bio.label }}<br>
-            {{ form.bio(cols = "200", rows = "40") }}<br>
+            {{ form.bio(cols = "100", rows = "20") }}<br>
         </p>
         <p>{{ form.submit() }}</p>
     </form>
